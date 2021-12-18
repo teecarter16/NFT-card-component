@@ -1,0 +1,137 @@
+body {
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+a:active{
+    color: hsl(215, 50%, 71%);
+}
+
+a:visited {
+    color: hsl(0, 0%, 100%);
+}
+
+.card-component {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 40px 10px;
+}
+
+.card-container{
+    margin: 25px;
+}
+
+.image-container {
+   width: 100%;
+   position: relative;
+}
+
+.image-container img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+   
+}
+
+.overlay-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 8px;
+    transition: .3s ease;
+    background-color: hsla(178, 100%, 50%, 0.466);
+}
+.overlay-icon{
+    color: hsl(0, 0%, 100%);
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+  
+  .image-container:hover .overlay-img {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.info-section h2:active, span a:active {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.nft-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-item {
+    display: flex;
+}
+
+
+.icon{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.icon img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.creator {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.creator a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.avatar-container {
+    width: 40px;
+    margin-right: 25px;
+}
+
+.avatar-container img {
+    border-radius: 50%;
+    border: hsl(0, 0%, 100%) 1px solid ;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .card-component{
+        background-color: hsl(216, 50%, 16%);
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .card-container{
+        width: 339px;
+        height: 602px;
+        margin: 25px;
+    }
+}
+
+
